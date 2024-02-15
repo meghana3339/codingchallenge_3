@@ -1,0 +1,60 @@
+<div class="container">
+    <table class="table" style="width: 500px;">
+      <tr>
+          <td>
+              <label>FlightId</label>
+          </td>
+          <td>
+              <input type="number" [(ngModel)]="flightId" class="form-control">
+          </td>
+          <td>
+              <button class="btn btn-primary" (click)="search()">Search</button>
+          </td>
+      </tr>
+      <tr>
+          <td colspan="3">
+              <span style="color: red;">{{errMsg}}</span>
+          </td>
+      </tr>
+  </table>
+   
+   
+      <h2>Flight Details</h2>
+   
+      <div *ngIf="isFlightExist; else noFlight">
+        <div class="flight-details">
+          <div class="detail">
+            <label>Flight Number:</label>
+            <span>{{ flight.flightNumber }}</span>
+          </div>
+          <div class="detail">
+            <label>Airline:</label>
+            <span>{{ flight.airline }}</span>
+          </div>
+          <div class="detail">
+            <label>Departure:</label>
+            <span>{{ flight.departureAirport }}</span>
+          </div>
+          <div class="detail">
+            <label>Arrival:</label>
+            <span>{{ flight.arrivalAirport }}</span>
+          </div>
+          <div class="detail">
+            <label>Departure Time:</label>
+            <span>{{ flight.departureDateTime | date: 'medium' }}</span>
+          </div>
+         
+          <!-- Add more details as needed -->
+        </div>
+   
+        <div class="btn-container">
+          <button (click)="edit()">Edit</button>
+          
+        </div>
+      </div>
+   
+      <ng-template #noFlight>
+        <p class="error-msg">{{ errMsg }}</p>
+      </ng-template>
+    </div>
+   

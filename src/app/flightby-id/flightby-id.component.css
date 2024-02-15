@@ -1,0 +1,50 @@
+.container {
+    margin: 20px;
+  }
+ 
+  .container h2 {
+    margin-bottom: 20px;
+  }
+ 
+  .flight-details {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+ 
+  .detail {
+    margin-bottom: 10px;
+  }
+ 
+  .detail label {
+    font-weight: bold;
+  }
+ 
+  .detail span {
+    margin-left: 10px;
+  }
+ 
+  .btn-container {
+    margin-top: 20px;
+  }
+ 
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+ 
+  button:hover {
+    background-color: #0056b3;
+  }
+ 
+  .error-msg {
+    color: red;
+    font-weight: bold;
+  }
+ 

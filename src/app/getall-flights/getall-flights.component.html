@@ -1,0 +1,24 @@
+
+<div class="row">
+  <div class="col" *ngIf="flights.length > 0">
+    <h2>List of Flights</h2>
+    <div class="row">
+      <div class="col" *ngFor="let flight of flights">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Flight Number: {{ flight.flightNumber }}</h5>
+            <p class="card-text"><strong>Airline:</strong> {{ flight.airline }}</p>
+            <p class="card-text"><strong>Departure Airport:</strong> {{ flight.departureAirport }}</p>
+            <p class="card-text"><strong>Arrival Airport:</strong> {{ flight.arrivalAirport }}</p>
+            <p class="card-text"><strong>Departure Date & Time:</strong> {{ flight.departureDateTime | date }}</p>
+            <p class="card-text"><strong>Arrival Date & Time:</strong> {{ flight.arrivalDateTime | date }}</p>
+            <p class="card-text"><strong>Ticket Price:</strong> {{ flight.ticketPrice | currency }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col" *ngIf="flights.length === 0">
+    <p>No flights available.</p>
+  </div>
+</div>

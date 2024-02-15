@@ -1,0 +1,50 @@
+<div class="container">
+    <form class="user-form">
+        <table class="user-table">
+            <!-- <tr>
+                <td>userId</td>
+                <td>
+                    <input type="number" [(ngModel)]="user.userId" name="userId">
+                </td>
+            </tr> -->
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input type="text" [(ngModel)]="user.name" name="name" class="form-control">
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" [(ngModel)]="user.email" name="email" class="form-control">
+                </td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td>
+                    <input type="text" [(ngModel)]="user.mobile" name="mobile" class="form-control">
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" [(ngModel)]="user.password" name="password" class="form-control">
+                </td>
+            </tr>
+            <tr>
+                <td>Role</td>
+                <td>
+                    <select [(ngModel)]="user.roleName" name="roleName" class="form-control">
+                        <option value="Admin">Admin</option>
+                        <option value="Customer">Customer</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="button" (click)="register()" class="btn btn-primary">Add</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

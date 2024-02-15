@@ -1,0 +1,70 @@
+.product-tile {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    background-color: whitesmoke; 
+}
+
+.product-tile:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-tile img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-details {
+    padding: 10px;
+}
+
+
+/* Style for the list of flights */
+.flights-container {
+    padding: 20px;
+  }
+  
+  /* Style for each individual flight */
+  .flight-item {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for flight details */
+  .flight-details {
+    margin-bottom: 10px;
+  }
+  
+  /* Style for flight number */
+  .flight-number {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Style for airline */
+  .airline {
+    color: #666;
+  }
+  
+  /* Style for airports */
+  .airport {
+    color: #777;
+  }
+  
+  /* Style for date and time */
+  .date-time {
+    color: #555;
+  }
+  
+  /* Style for ticket price */
+  .ticket-price {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
